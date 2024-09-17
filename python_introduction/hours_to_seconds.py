@@ -1,8 +1,7 @@
 #Defined the two variables
 hours = 2
-nums_of_seconds = 3600
 
 #Formula to calculate the number of seconds in hours
-seconds = hours * nums_of_seconds
+seconds = hours * 3600
 
 print(hours, "hour(s) is", seconds, "seconds")
