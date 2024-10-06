@@ -8,8 +8,7 @@ def perform_operation(num1, num2, operation):
             mutiply = lambda num1, num2: num1 * num2
         case operation if operation == "divide":
             divide = lambda num1, num2: num1 / num2
-            while true:
-                if num1 or num2 == 0:
-                    print("The value you've entred is 0, please enter a number")
+            if num1 or num2 == 0:
+                print("The value you've entred is 0, please enter a number")
     return perform_operation
         
