@@ -1,5 +1,5 @@
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 FAHRENHEIT_OFFSET = 32
 
 def convert_to_celsius(fahrenheit):
@@ -20,4 +20,5 @@ def main():
             print(f"{temp}F os equal to {converted_temp}F.")
         else:
             raise ValueError("Invalid scale. Please enter C for celsius or F for Fahrenheit. ")
-    except ValueError("Invalid scale. Please enter a numeric value for the temperature.")
+    except ValueError as e:
+        print(f"Error: {e}. Please enter a numeric value for the temperature.")
